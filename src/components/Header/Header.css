@@ -1,0 +1,48 @@
+.header {
+  width: 88%;
+  height: 44px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  margin: 36px auto 0;
+}
+
+.header__text {
+  display: inline-block;
+  width: 1120px;
+  height: 100%;
+  font-family: 'Exo 2.0';
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 0px 1px 1px #000000;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 36px;
+    margin-top: 24px;
+  }
+	.header__text {
+    font-size: 24px;
+    line-height: 36px;
+	}
+}
+
+@media (max-width: 460px) {
+  .header {
+    height: 26px;
+    margin-top: 18px;
+  }
+	.header__text {
+    font-size: 18px;
+    line-height: 26px;
+	}
+}

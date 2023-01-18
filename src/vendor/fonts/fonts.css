@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Trebuchet MS';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./trebuchetms-normal.woff2') format('woff2');
+  src: url('./trebuchetms-normal.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Trebuchet MS';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./trebuchetms-bold.woff2') format('woff2');
+  src: url('./trebuchetms-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Exo 2.0";
+  font-style: normal;
+  font-display: swap;
+  src: url('./exo-20-thin.woff2') format('woff2');
+  src: url('./exo-20-thin.woff') format('woff');
+}

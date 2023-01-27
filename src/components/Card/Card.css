@@ -5,7 +5,6 @@
 }
 
 .card__product-border {
-  margin:14px;
   position: relative;
   width: 328px;
   height: 489px;
@@ -13,6 +12,10 @@
   border-radius: 14px;
   clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
   margin: 0;
+}
+
+.card__product-border-pink {
+  background: #E52E7A;
 }
 
 .card__product {
@@ -44,6 +47,10 @@
   line-height: 19px;
   color: #666666;
   margin: 0;
+}
+
+.card__description-pink {
+  color: #E62E7A;
 }
 
 .card__title {
@@ -111,6 +118,10 @@ margin: -7px 0 0 -25px;
   color: #FFF;
 }
 
+.card__weight-pink {
+  background: #E52E7A;
+}
+
 .card__weight-number {
   font-size: 42px;
   line-height: 20px;
@@ -124,7 +135,7 @@ margin: -7px 0 0 -25px;
   margin: 0;
 }
 
-.card__buy {
+.card__buy-container {
   font-family: 'Trebuchet MS';
   font-style: normal;
   font-weight: 400;
@@ -134,11 +145,52 @@ margin: -7px 0 0 -25px;
   color: #FFF;
   margin: 17px 0 0 4px;
   word-spacing: 0.17em;
+  width: 313px;
+  height: 15px;
+  white-space: nowrap;
 }
 
-.card__buy-link {
+.card__buy-button {
   font-weight: 700;
   color: rgba(22, 152, 217, 1);
+  border: none;
   border-bottom: 1px dashed rgba(22, 152, 217, 1);
+  background: transparent;
+  cursor: pointer;
   text-decoration: none;
 }
+
+.card__buy-response {
+  margin: 0;
+}
+
+@media (max-width: 1279px) {
+  .card:last-of-type {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .card:last-of-type {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    display: grid;
+    justify-content: start;
+  }
+
+  .card__product {
+    width: 300px;
+  }
+  
+  .card__product-border {
+    width: 308px;
+  }
+  .card__buy-container {
+    width: 303px;
+  }
+}
+

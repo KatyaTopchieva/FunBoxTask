@@ -8,7 +8,7 @@
 }
 
 .main__text { 
-  width: 1119px;
+  width: max-content;
   height: 43px;
   font-family: 'Exo 2.0';
   font-size: 36px;
@@ -29,4 +29,37 @@
   width: 1120px;
   height: 509px;
   margin: 24px auto 0;
+}
+
+@media (max-width: 1279px) {
+  .main__text {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .main__cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 489px;
+    gap: 50px;
+    width: max-content;
+    height: 1090px;
+    margin: 8px 0 0 0;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 10px;
+    height: 30px;
+  }
+
+  .main__cards {
+    grid-template-columns: 320px;
+    grid-template-rows: 509px;
+    height: 1627px;
+    width: 320px;
+  }
 }

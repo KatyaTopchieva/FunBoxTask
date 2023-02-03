@@ -12,6 +12,7 @@ function CardChicken() {
       mouses="5 мышей в подарок заказчик доволен"
       weight="5"
       buyResponse="Филе из цыплят с трюфелями в бульоне."
+      productsInStocke={0}
     />
   )
 };

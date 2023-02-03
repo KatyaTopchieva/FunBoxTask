@@ -5,6 +5,7 @@ import CardFish from "../CardFish/CardFish";
 import CardChicken from "../CardChicken/CardChicken";
 
 function Main() {
+  
     return (
         <main className="main">
           <p className="main__text">Ты сегодня покормил кота?</p>

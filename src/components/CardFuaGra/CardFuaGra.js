@@ -12,6 +12,7 @@ function CardFuaGra(props) {
       mouses="мышь в подарок"
       weight="0,5"
       buyResponse="Печень утки разварная с артишоками."
+      productsInStocke={2}
     />
   )
 };

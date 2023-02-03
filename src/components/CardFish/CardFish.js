@@ -12,6 +12,7 @@ function CardFish() {
       mouses="2 мыши в подарок"
       weight="2"
       buyResponse="Головы щучьи с чесноком да свежайшая сёмгушка."
+      productsInStocke={4}
     />
   )
 };

@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import './Card.css';
 import '../../images/cat.png';
-import { useState } from "react";
 
 function Card(props) {
   const cardName = props.cardName
@@ -12,19 +11,34 @@ function Card(props) {
   const buyResponse = props.buyResponse
   const secondDescription = props.secondDescription
   const firstDescription = props.firstDescription
+  let productsInStocke = props.productsInStocke
+
   
   const [clickButton, setClickButton] = useState(false);
-  
+
+
+
   function handleButton() {
-    setClickButton(true);
+    setClickButton(true);   
+  }
+
+  function handleCard() {
+    return productsInStocke = productsInStocke - 1;
+  }
+
+  function handleClick() {
+    handleButton();
+    handleCard();
   }
 
   return (
     <section className="card" name={cardName}>
-      <div className={`${ clickButton ? "card__product-border card__product-border-pink" :
-        "card__product-border"}`}>
+      <div className={`${ (productsInStocke > 0) ?
+        (clickButton ? "card__product-border card__product-border-pink" :
+        "card__product-border") : "card__product-border card__product-border-grey"
+      }`}>
         <div className="card__product">
-          <div className="card__text">
+          <div className={`${(productsInStocke > 0) ? "card__text" : "card__text card__text-grey"}`}>
             <h3 className={`${ clickButton ? "card__description card__description-pink" : "card__description"}`}>
               { clickButton ?  secondDescription : firstDescription }
             </h3>
@@ -35,20 +49,26 @@ function Card(props) {
               <p className="card__bonus-mouses">{mouses}</p>
             </div>
           </div>
-          <img className="card__image" src={require("../../images/cat.png")} alt="Кот"></img>
-          <div className={`${clickButton ? "card__weight card__weight-pink" : "card__weight"}`}>
+          <img className={`${(productsInStocke !== 0 ) ? "card__image" : "card__image  card__image-off"}`}
+            src={require("../../images/cat.png")} alt="Кот"></img>
+          <div className={`${(productsInStocke > 0) ?
+              (clickButton ? "card__weight card__weight-pink" : "card__weight") :
+              "card__weight card__weight-grey"
+              }`}>
             <h3 className="card__weight-number">{weight}</h3>
             <p className="card__weight-value">кг</p>
           </div>
         </div>
       </div>
-      <div className="card__buy-container">
-        { clickButton ?
+      <div className="card__buy-container"> {(productsInStocke > 0) ?
+        ( clickButton ?
           <p className="card__buy-response">{buyResponse}</p> :
           <div className="card__buy">Чего сидишь? Порадуй котэ,
-            <button className="card__buy-button" onClick={handleButton} type="button">&nbsp;купи.</button>
-          </div>
-        }        
+            <button className="card__buy-button" onClick={handleClick} type="button">&nbsp;купи.</button>
+          </div> ) : (
+            <p className="card__buy-disabled">Печалька, {productName} закончился</p>
+          ) 
+        }      
       </div>
     </section>
   )

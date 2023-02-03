@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/funboxtask/static/css/main.e6d21b8f.css",
+    "main.js": "/funboxtask/static/js/main.577f1f96.js",
+    "static/js/787.82437b33.chunk.js": "/funboxtask/static/js/787.82437b33.chunk.js",
+    "static/media/cat.png": "/funboxtask/static/media/cat.6c7ee513cf9f23ff1655.png",
+    "static/media/trebuchetms-normal.woff": "/funboxtask/static/media/trebuchetms-normal.4a7f00bf47f8987a4115.woff",
+    "static/media/trebuchetms-bold.woff": "/funboxtask/static/media/trebuchetms-bold.057de306ef84cb8af3f7.woff",
+    "static/media/trebuchetms-normal.woff2": "/funboxtask/static/media/trebuchetms-normal.b1776c1f072a4dfa7790.woff2",
+    "static/media/trebuchetms-bold.woff2": "/funboxtask/static/media/trebuchetms-bold.dcac36883edf28c4c330.woff2",
+    "static/media/pattern.png": "/funboxtask/static/media/pattern.5e58a99fce97a8ec876d.png",
+    "static/media/exo-20-thin.woff": "/funboxtask/static/media/exo-20-thin.c0a17ffb58c0a0787035.woff",
+    "static/media/exo-20-thin.woff2": "/funboxtask/static/media/exo-20-thin.b76f8526bc09c5d6db9b.woff2",
+    "index.html": "/funboxtask/index.html",
+    "main.e6d21b8f.css.map": "/funboxtask/static/css/main.e6d21b8f.css.map",
+    "main.577f1f96.js.map": "/funboxtask/static/js/main.577f1f96.js.map",
+    "787.82437b33.chunk.js.map": "/funboxtask/static/js/787.82437b33.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6d21b8f.css",
+    "static/js/main.577f1f96.js"
+  ]
+}
